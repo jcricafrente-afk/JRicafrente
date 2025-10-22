@@ -1,0 +1,26 @@
+### Create a position
+POST http://localhost:3000/positions
+Content-Type: application/json
+
+{
+  "position_code": "POS010",
+  "position_name": "Supervisor"
+}
+
+### Get all positions
+GET http://localhost:3000/positions
+
+### Get a position by id
+GET http://localhost:3000/positions/1
+
+### Update a position
+PUT http://localhost:3000/positions/1
+Content-Type: application/json
+
+{
+  "position_code": "POS011",
+  "position_name": "Senior Supervisor"
+}
+
+### Delete a position
+DELETE http://localhost:3000/positions/1
